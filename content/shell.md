@@ -3,8 +3,8 @@ title: Shell Scripts
 draft: false
 tags:
   - automation
-	- scripts
-	- shell
+  - scripts
+  - shell
 ---
 
 

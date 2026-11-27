@@ -4,6 +4,7 @@ draft: false
 tags:
   - networking
   - diagram
+  - homelab
 ---
 
 Example Architecture of Home Lab

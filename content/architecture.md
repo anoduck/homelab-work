@@ -25,6 +25,7 @@ architecture-beta
     
     group pundit(database)[Pundit] in homelab
 	    service pgsql(database)[Postgres] in pundit
+	    service mysql(database)[MySQL] in pundit
     
     group titan(server)[Titan] in homelab
 	    service apache(server)[Apache] in titan
@@ -38,7 +39,7 @@ architecture-beta
 	nginx{group}:B --> T:router
 	
 	pgsql{group}:B -- T:apache{group}
-	pgsql{group}:B -- T:nginx{group}
+	mysql{group}:B -- T:nginx{group}
 
 ```
 

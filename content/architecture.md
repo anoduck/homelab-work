@@ -1,3 +1,10 @@
+---
+title: Architecture
+draft: false
+tags:
+  - networking
+  - diagram
+---
 
 Example Architecture of Home Lab
 

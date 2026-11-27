@@ -1,3 +1,13 @@
+---
+title: Shell Scripts
+draft: false
+tags:
+  - automation
+	- scripts
+	- shell
+---
+
+
 Using the shell is the easiest and most direct means of accomplishing anything on a computational system. It is the primary means by which humans interface with the system. 
 
 Good scripts are well documented, easy to read, aim for simplicity, and avoids errors. 

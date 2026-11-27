@@ -1,3 +1,12 @@
+---
+title: Just Runner
+draft: false
+tags:
+  - scripts
+  - automation
+  - just
+---
+
 [Just](https://just.systems/) is a workflow runner and tool for the command line. It is a convenient way to run automated tasks and commands. Think of it as a simpler more basic type of shell script. 
 
 While it is true you could do everything you needed just to do with writing a shell script, using just avoids the complexity and pitfalls of shell scripts. It's "just easier" to use.

@@ -11,6 +11,7 @@ configuration:
   ignorePatterns:
     - private
     - templates
+    - _template
     - .obsidian
   theme:
     fontOrigin: googleFonts

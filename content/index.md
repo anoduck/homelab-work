@@ -1,6 +1,16 @@
 ---
 title: Welcome to Quartz
 ---
+Links to pages are below in the table.
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+### Internal Links
+
+| Links            |          |           |
+| ---------------- | -------- | --------- |
+| [[architecture]] | [[just]] | [[shell]] |
+|                  |          |           |
+
+### External Links
+
+* [Wiki](https://anoduck.github.io/wiki/)
+* [Github](https://github.com/anoduck)

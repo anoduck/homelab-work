@@ -6,36 +6,47 @@ tags:
   - diagram
   - homelab
 ---
+## Mermaid Diagram
 
-Example Architecture of Home Lab
+Example Architecture of Home Lab in Mermaid
+
+Currently, mermaid's architecture layout is still in _beta_ development, and therefore consequentially only offers a mere handful of icons for distinguishing features. There are currently:
+
+* Disk
+* Database
+* apache
+* Cloud
+* Internet
+Adding a custom icon pack to this lineup is an available option, but the investment to achieve uniform operational consistency across the several platforms used during the creation of this documentation far exceeds it's utility.
 
 ```mermaid
 architecture-beta
     group homelab(home)[Home Lab]
     
+    group pundit(database)[Pundit] in homelab
+	    service pgsql(database)[Postgres] in pundit
+    
     group titan(server)[Titan] in homelab
-
-	    service db(database)[Database] in titan
-	    service disk1(disk)[Storage] in titan
-	    service server(server)[Server] in titan
-
-	    db:L -- R:server
-	    disk1:T -- B:server
-	    disk1:T -- B:db
-	    
+	    service apache(server)[Apache] in titan
+	
 	group orion(server)[Orion] in homelab
-
-	    service db2(database)[Database] in orion
-	    service disk2(disk)[Storage] in orion
-	    service server2(server)[Server] in orion
-
-	    db2:L -- R:server2
-	    disk2:T -- B:server2
-	    disk2:T -- B:db2
-	    
-	server{group}:L -- R:server2{group}
+	    service nginx(server)[Nginx] in orion
+	
+	service router(internet)[Router] in homelab
+	
+	apache{group}:B --> T:router 
+	nginx{group}:B --> T:router
+	
+	pgsql{group}:B -- T:apache{group}
+	pgsql{group}:B -- T:nginx{group}
 
 ```
 
 ---
+
+### Previous Network Diagram
+
+Creating network diagrams using the _Dia_ diagram editor is a far easier approach.
+
+
 ![Network](Network.svg)

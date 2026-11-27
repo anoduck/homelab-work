@@ -4,4 +4,5 @@ date: "{{date}}"
 tags:
   - studies
 aliases:
+draft:
 ---
